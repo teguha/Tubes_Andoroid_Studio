@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!--    membuat ukuran kotak constrait layout yang membungkus gamabr dan text view-->
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/gambars"
+        android:padding="10dp"
+        android:src="@drawable/ic_book"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical"
+        android:gravity="center|left"
+        android:layout_centerVertical="true"
+        android:paddingTop="18dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tes"
+            android:id="@+id/namas"
+            android:paddingTop="2dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keterangans"
+            android:text="keterangan"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bck6"
+        android:paddingTop="60dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+
+            android:layout_marginLeft="50dp"
+            android:layout_height="10dp"
+            android:clickable="true"
+            android:layout_marginBottom="80dp">
+
+        </androidx.cardview.widget.CardView>
+
+
+    <GridLayout
+        android:id = "@+id/mainGrid"
+        android:rowCount = "3"
+        android:columnCount = "2"
+        android:alignmentMode = "alignMargins"
+        android:columnOrderPreserved = "false"
+        android:layout_weight = "8"
+        android:layout_width = "match_parent"
+        android:layout_height = "1dp"
+        android:padding = "14dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "1dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/data1"
+                android:background="@drawable/fiksi"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+
+                    android:id="@+id/buku"
+                    android:layout_gravity="center">
+                </ImageView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="List Novel"-->
+<!--                    android:textAlignment="center">-->
+<!--                </TextView>-->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/horor"
+                android:id="@+id/data2"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/buku2"
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center">
+
+                </ImageView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Novel"-->
+<!--                    android:textAlignment="center">-->
+<!--                </TextView>-->
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/fantasy"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/buku3"
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+
+                    android:layout_gravity="center">
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/romance"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/buku4"
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+
+                    android:layout_gravity="center">
+                </ImageView>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Novel"-->
+<!--                    android:textAlignment="center">-->
+<!--                </TextView>-->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+            android:background="@drawable/a1"
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/comedy"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/buku5"
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+
+                    android:layout_gravity="center">
+                </ImageView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_columnWeight = "1"
+            android:layout_marginBottom = "16dp"
+            android:layout_rowWeight = "1"
+            android:layout_marginLeft = "16dp"
+            android:layout_marginRight = "16dp"
+            app:cardElevation = "8dp"
+            app:cardCornerRadius = "8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/horor"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/buku6"
+                    android:layout_width="135dp"
+                    android:layout_height="150dp"
+
+                    android:layout_gravity="center">
+                </ImageView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>

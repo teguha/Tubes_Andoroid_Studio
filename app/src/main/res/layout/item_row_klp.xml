@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="20dp"
+    android:background="@color/cardview_light_background">
+
+    <!--    membuat ukuran kotak constrait layout yang membungkus gamabr dan text view-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profiles"
+        android:padding="10dp"
+        android:src="@drawable/ic_book"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical"
+        android:gravity="center|left"
+        android:layout_centerVertical="true"
+        android:paddingTop="12dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tes"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+
+            android:id="@+id/names"
+            android:paddingTop="2dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/keterangans"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

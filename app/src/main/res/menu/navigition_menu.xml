@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homes"
+        android:icon="@drawable/ic_home"
+
+        android:title="home"
+    />
+
+    <item android:id="@+id/profile"
+        android:icon="@drawable/ic_book"
+
+        android:title="profile"/>
+
+    <item android:id="@+id/homes2"
+        android:iconTint="@color/black"
+
+        android:title="home"
+        />
+
+    <item android:id="@+id/profile2"
+        android:iconTint="@color/black"
+
+        android:title="profile"/>
+</menu>
