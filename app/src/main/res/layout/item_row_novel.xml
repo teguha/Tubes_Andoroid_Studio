@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="8dp"
+    app:cardBackgroundColor="@color/combine2"
+    android:layout_marginLeft="8dp"
+    android:padding="12dp"
+    android:background="@color/cardview_light_background"
+    app:cardCornerRadius="12dp"
+    >
+
+    <!--    membuat ukuran kotak constrait layout yang membungkus gamabr dan text view-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile"
+        android:padding="10dp"
+        android:src="@drawable/ic_book"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical"
+        android:gravity="center|left"
+        android:layout_centerVertical="true"
+        android:paddingTop="18dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tes"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:id="@+id/keterangan"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

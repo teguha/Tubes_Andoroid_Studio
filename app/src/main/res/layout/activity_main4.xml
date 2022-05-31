@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorb"
+    tools:context=".MainActivity4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:padding="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:text="hello"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:text="Teguh"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hello" />
+
+    <ImageView
+        android:id="@+id/iconbuku2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="@id/hello"
+        app:layout_constraintTop_toTopOf="@id/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        app:tint="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/header2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/iconbuku2">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            tools:ignore="Suspicious0dp" />
+
+    </LinearLayout>/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layoutGoal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_template"
+                android:gravity="center"
+
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/layoutGoal2"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints" >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="menu"
+                    android:src="@drawable/horor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="horor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGoal2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_template"
+                android:gravity="center"
+
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintStart_toEndOf="@id/layoutGoal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints" >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="menu"
+                    android:src="@drawable/horor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="horor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGoal3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_template"
+                android:gravity="center"
+
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/layoutGoal2"
+               app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutGoal"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints" >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="menu"
+                    android:src="@drawable/romance"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="romance"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGoal4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_template"
+                android:gravity="center"
+
+                android:padding="15dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintStart_toStartOf="@id/layoutGoal2"
+                app:layout_constraintTop_toBottomOf="@id/layoutGoal2"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints" >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="menu"
+                    android:src="@drawable/romance"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="romance"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="360dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/trends"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="@id/layoutGoal2"
+            app:layout_constraintStart_toStartOf="@+id/layoutGoal"
+            app:layout_constraintTop_toBottomOf="@id/layoutGoal3"
+
+            tools:ignore="MissingConstraints,NotSibling" >
+            <ImageView
+                android:id="@+id/iconbuku"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_books"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/layoutGoal3"
+                tools:ignore="MissingConstraints"
+                app:tint="@color/white"></ImageView>
+
+            <TextView
+                android:id="@+id/keteranganhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="2dp"
+                app:layout_constraintStart_toEndOf="@id/iconbuku"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="aplikasi list novel sederhana"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:backgroundTint="@color/white"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:background="@color/white">
+       <ImageView
+           android:id="@+id/homes3"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/ic_home"
+           android:paddingLeft="82dp"
+           app:tint="@color/header"></ImageView>
+       <ImageView
+           android:id="@+id/profiles3"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/ic_baseline_person_24"
+           android:paddingLeft="184dp"></ImageView>
+   </LinearLayout>
+
+
+
+
+
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/nav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        app:itemIconSize="30dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:menu="@menu/navigition_menu"-->
+<!--        tools:ignore="MissingConstraints" >-->
+
+
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
